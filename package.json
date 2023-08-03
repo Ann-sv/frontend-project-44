@@ -4,7 +4,7 @@
   "description": "My firstly project for Hexlet",
   "main": "index.js",
   "bin": {
-    "code": "bin/brain-games.js"
+    "brain-games": "bin/brain-games.js"
   },
   "scripts": {
     "test": "go"
@@ -19,5 +19,6 @@
   "author": "Ann K.",
   "license": "ISC",
   "type": "module"
+  
 }
 
