@@ -18,7 +18,7 @@
   ],
   "author": "Ann K.",
   "license": "ISC",
-  "type": "commonjs",
+  "type": "module",
   "dependencies": {
     "readline-sync": "^1.4.10"
   },
