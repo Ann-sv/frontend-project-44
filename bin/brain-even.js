@@ -1,29 +1,19 @@
-import readlineSync from 'readline-sync';
-import Name from '../src/cli.js';
 
-export default () => {
-  console.log('Answer "yes" if the number is even, otherwise answer "no".');
+   export default() => {
 
-  const getNumber = (min, max) => {
-    let transf = Math.random();
-    let result = Math.floor(transf * (max - min) + min);
-    return result;
-  };
-  const number = getNumber(10, 99);
-  console.log('Question: ' + number);
+   let description = 'Answer "yes" if the number is even, otherwise answer "no".'; //правила игры
+    let min = 10;
+    let max = 99;
+    const getNumber = (min, max) => {
+        let transf = Math.random();
+        let question = Math.floor(transf * (max - min) + min);
+        return question;
+      };
 
-  let answer = readlineSync.question('Your answer: ' );
-
-  function trueAns(number) {
-    return number % 2 == 0 ? "yes" : "no";
-}
-
-  const checkingTheNum = (number, answer) => {
-    if (number % 2 == 0 & answer == 'yes' || number % 2 !== 0 & answer == 'no') {
-        return 'Correct!';
-    }
-   return `"${answer}" is wrong answer ;(. Correct answer was "${trueAns(number)}". Lets try again, ${Name}`;
-};
-  console.log(checkingTheNum(number, answer));
-
-};
+    const getQuestionAndAnswer = () => {
+     let correctAnswer = 0;
+     question % 2 === 0 ? correctAnswer = "yes" : correctAnswer = "no"; //проверка рандомного числа на четность\
+     return correctAnswer;
+    };
+   }
+   

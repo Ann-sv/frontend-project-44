@@ -1,9 +1,9 @@
 #!/usr/bin/env node
 
-import greetAndAskForName from '../src/cli.js';
 
-greetAndAskForName();
+import mainCode from '../index.js';
+import brainEven from '/Users/admin/frontend-project-44/bin/brain-even.js';
 
-import logicAndWorkGame from '../bin/brain-even.js';
 
-logicAndWorkGame();
+mainCode();
+brainEven();
