@@ -1,6 +1,6 @@
 import readlineSync from 'readline-sync';
 
-  export default () => {
+const username = () => {
   console.log('Welcome to the Brain Games!');
 
   let name = readlineSync.question('May I have your name? ');
@@ -9,4 +9,4 @@ import readlineSync from 'readline-sync';
   return name;
 };
 
-
+export default username;
