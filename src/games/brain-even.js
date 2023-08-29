@@ -1,5 +1,5 @@
 import getRandomNumber from '/Users/admin/frontend-project-44/src/random.js';
-import customGame from './index.js';
+import customGame from '/Users/admin/frontend-project-44/src/index.js';
 
 const description = 'Answer "yes" if the number is even, otherwise answer "no"';
 

@@ -4,7 +4,9 @@
   "description": "My firstly project for Hexlet",
   "main": "index.js",
   "bin": {
-    "brain-games": "bin/brain-games.js"
+    "brain-games": "bin/brain-games.js",
+    "brain-calc": "bin/brain-calc.js",
+    "brain-even": "bin/brain-even.js"
   },
   "scripts": {
     "test": "go"
