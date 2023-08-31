@@ -22,8 +22,8 @@ const isRightCalc = (a, b)  => {
 };
 
 const getQuestionAndAnswer = () => {
-  const num1 = getRandomNumber(0, 10);
-  const num2 = getRandomNumber(0, 10);
+  const num1 = getRandomNumber(1, 10);
+  const num2 = getRandomNumber(1, 10);
   const question = `${num1} ${num2}`;
   const correctAnswer = isRightCalc(num1, num2);
   return [question, correctAnswer];
