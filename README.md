@@ -16,4 +16,4 @@ make brain-prime:
 [![asciicast](https://asciinema.org/a/WkjvW0cAo4YagwpjndOeu1FX9.svg)](https://asciinema.org/a/WkjvW0cAo4YagwpjndOeu1FX9)
 
 make brain-progression:
-[![asciicast](https://asciinema.org/a/GDfj8nVShjH1M1zdf3AUFOqkB.svg)](https://asciinema.org/a/GDfj8nVShjH1M1zdf3AUFOqkB)
+[![asciicast](https://asciinema.org/a/9H6YOK7YIOEQ9ul1YZEk62Nrt.svg)](https://asciinema.org/a/9H6YOK7YIOEQ9ul1YZEk62Nrt)
