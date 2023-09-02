@@ -3,29 +3,27 @@ import customGame from '../index.js';
 
 const description = 'Find the greatest common divisor of given numbers.';
 
-
-const isRightCalc = (a, b)  => {
-  while (a !== 0 && b !== 0) {
-    if (a > b) {
-      a %= b;
+const isRightCalc = (a, b) => {
+  let c = a;
+  let d = b;
+  while (c !== 0 && d !== 0) {
+    if (c > d) {
+      c %= d;
+    } else {
+      d %= c;
     }
-    else {
-      b %= a;
-    }
   }
-  if (a === 0) {
-    return b;
+  if (c === 0) {
+    return d;
   }
-  {
-    return a;
-  }
+  return c;
 };
 
 const getQuestionAndAnswer = () => {
   const num1 = getRandomNumber(1, 10);
   const num2 = getRandomNumber(1, 10);
   const question = `${num1} ${num2}`;
-  const correctAnswer = isRightCalc(num1, num2);
+  const correctAnswer = String(isRightCalc(num1, num2));
   return [question, correctAnswer];
 };
 

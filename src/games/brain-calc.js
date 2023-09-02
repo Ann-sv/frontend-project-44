@@ -11,13 +11,16 @@ const getRandomOperator = (array = ['+', '-', '*']) => {
 const isRightCalc = (num1, num2, operator) => {
   let result = 0;
   if (operator === '-') {
-    return result = num1 - num2;
+    result = String(num1 - num2);
+    return result;
   }
-  else if (operator === '*') {
-    return result = num1 * num2;
+  if (operator === '*') {
+    result = String(num1 * num2);
+    return result;
   }
-  else if (operator === '+') {
-    return result = num1 + num2;
+  if (operator === '+') {
+    result = String(num1 + num2);
+    return result;
   }
   return false;
 };
