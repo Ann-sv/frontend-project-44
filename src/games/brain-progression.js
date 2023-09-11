@@ -3,7 +3,7 @@ import customGame from '../index.js';
 
 const description = 'What number is missing in the progression?';
 
-const progres =(length) => {
+const progres = (length) => {
   const firstNum = getRandomNumber(0, 99);
   const arr = [];
   const step = getRandomNumber(1, 10);
@@ -14,12 +14,12 @@ const progres =(length) => {
     arr.push(nextNum);
   }
   return arr;
-}
+};
 
 const getQuestionAndAnswer = () => {
   const length = getRandomNumber(5, 10);
   const deleteIndex = getRandomNumber(0, length - 1);
-  let arr = progres(length);
+  const arr = progres(length);
   const correctAnswer = String(arr[deleteIndex]);
   arr[deleteIndex] = '..';
   const question = String(arr.join(' '));
