@@ -3,7 +3,7 @@ import customGame from '../index.js';
 
 const description = 'Find the greatest common divisor of given numbers.';
 
-const isRightCalc = (a, b) => {
+const getGcd = (a, b) => {
   let c = a;
   let d = b;
   while (c !== 0 && d !== 0) {
@@ -23,11 +23,9 @@ const getQuestionAndAnswer = () => {
   const num1 = getRandomNumber(1, 10);
   const num2 = getRandomNumber(1, 10);
   const question = `${num1} ${num2}`;
-  const correctAnswer = String(isRightCalc(num1, num2));
+  const correctAnswer = String(getGcd(num1, num2));
   return [question, correctAnswer];
 };
-
-// const correctAnswer = getRandomOperator + getRandomNumber + getRandomNumber;
 
 export default () => {
   customGame(description, getQuestionAndAnswer);
